@@ -15,7 +15,6 @@ def reduce(array, start = nil)
   i = 0
   
   if start != nil
-    binding.pry
     value = start
   else
     value = array[0]
