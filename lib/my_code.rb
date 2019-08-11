@@ -27,4 +27,6 @@ def reduce(array, start = nil)
     i = i + 1
   end
   
+  return value
+  
 end 
