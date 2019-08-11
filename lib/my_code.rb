@@ -17,5 +17,4 @@ def reduce(array)
     i = i + 1
   end
 
-  return arr
 end 
