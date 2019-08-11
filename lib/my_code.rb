@@ -9,10 +9,10 @@ def map(array)
   return arr
 end
 
-def reduce(array)
-  #value = 0
+def reduce(array, start = nil)
+  value = start
   while i < array.length
-    value = arr + yield(array[i])
+    value = yield(value, array[i])
     i = i + 1
   end
   
