@@ -10,7 +10,15 @@ def map(array)
 end
 
 def reduce(array, start = nil)
-  value = start
+  i = 0
+  
+  if start != nil 
+    value = start
+  else
+    value = array[0]
+    i = 1 
+  end
+  
   while i < array.length
     value = yield(value, array[i])
     i = i + 1
