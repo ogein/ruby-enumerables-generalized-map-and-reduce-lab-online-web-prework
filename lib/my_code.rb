@@ -1,3 +1,5 @@
+require 'pry'
+
 def map(array)
   i = 0
   arr = []
@@ -12,7 +14,8 @@ end
 def reduce(array, start = nil)
   i = 0
   
-  if start != nil 
+  if start != nil
+    binding.pry
     value = start
   else
     value = array[0]
