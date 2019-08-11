@@ -12,6 +12,7 @@ end
 def reduce(array)
   
   arr = []
+  
   while i < array.length
     arr << yield(array[i], num)
     i = i + 1
