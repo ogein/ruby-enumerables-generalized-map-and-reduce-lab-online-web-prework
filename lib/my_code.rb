@@ -10,12 +10,10 @@ def map(array)
 end
 
 def reduce(array)
-  
-  arr = []
-  
+  #value = 0
   while i < array.length
-    arr << yield(array[i], num)
+    value = arr + yield(array[i])
     i = i + 1
   end
-
+  
 end 
